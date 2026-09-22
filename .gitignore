@@ -1,0 +1,8 @@
+# Oude lokale PHP-versie; de Vercel-versie gebruikt alleen statische bestanden.
+*.php
+data/
+includes/
+
+# Lokale hulpmiddelen en editorbestanden.
+node_modules/
+.DS_Store

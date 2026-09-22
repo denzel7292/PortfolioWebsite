@@ -1,0 +1,57 @@
+# Portfolio — eerste basis
+
+Een basisportfolio in HTML, CSS en een klein beetje JavaScript als start.
+Alle teksten, projectnamen en beelden zijn voorbeelden. Er is geen database,
+contactformulier, externe bibliotheek of koppeling met een andere dienst.
+
+## Lokaal bekijken
+
+Deze versie is statisch en daardoor meteen geschikt voor Vercel. Er is geen database of PHP-server nodig.
+
+1. Open deze projectmap in een terminal (PowerShell).
+2. Start de website met bijvoorbeeld:
+
+   ```powershell
+   npx serve . -l 3000
+   ```
+
+3. Open <http://localhost:3000> in je browser.
+4. Stop de server met `Ctrl+C` in die terminal.
+
+Je hoeft MySQL of Apache niet te starten.
+
+## Bestanden
+
+```text
+index.html                    Homepage
+project.html                  Projectdetailpagina
+404.html                      Pagina voor een onbekend adres
+assets/
+  css/style.css               Dummy stijl en mobiele weergave
+  js/main.js                  Openen en sluiten van het mobiele menu
+  favicon.svg                 Klein pictogram voor het browsertabblad
+```
+
+## Wat werkt al?
+
+- Navigatie naar werk, over mij en contact.
+- Vier aanklikbare projecten met een eigen adres, bijvoorbeeld `project.html?id=project-01`.
+- Eén gedeelde opbouw voor de case studies: uitdaging, proces en resultaat.
+- Mobiel menu, ook te sluiten met Escape. Zonder JavaScript blijven de links zichtbaar.
+- Weergave voor desktop, tablet en mobiel, zichtbare toetsenbordfocus en minder beweging
+  wanneer de bezoeker dat heeft ingesteld.
+- Een 404-melding bij een onbekend project.
+
+Contact is voorlopig alleen een zichtbare placeholder. Er worden geen berichten verstuurd.
+De grafische vlakken zijn met CSS opgebouwd, zodat er nog geen echte projectfoto's nodig zijn.
+Een playground en uitgebreidere functies kunnen later toegevoegd worden.
+
+## Later aanpassen
+
+Begin met de naam in `includes/header.php` en `includes/footer.php`, de introductie
+in `index.php` en de projectgegevens in `data/projects.php`.
+De algemene kleuren staan bovenaan `assets/css/style.css`.
+
+De projectlijst bevat nu uitsluitend vaste, eigen voorbeeldinhoud. Wil je later
+gebruikersinvoer of gegevens uit een database tonen, escape die tekst dan met
+`htmlspecialchars()` voordat je ze in HTML uitvoert.
