@@ -6,7 +6,7 @@ contactformulier, externe bibliotheek of koppeling met een andere dienst.
 
 ## Lokaal bekijken
 
-Deze versie is statisch en daardoor meteen geschikt voor Vercel. Er is geen database of PHP-server nodig.
+Deze versie is statisch en daardoor meteen geschikt voor Vercel.
 
 1. Open deze projectmap in een terminal (PowerShell).
 2. Start de website met bijvoorbeeld:
@@ -18,7 +18,7 @@ Deze versie is statisch en daardoor meteen geschikt voor Vercel. Er is geen data
 3. Open <http://localhost:3000> in je browser.
 4. Stop de server met `Ctrl+C` in die terminal.
 
-Je hoeft MySQL of Apache niet te starten.
+Er is geen database of aparte applicatieserver nodig.
 
 ## Bestanden
 
@@ -48,10 +48,6 @@ Een playground en uitgebreidere functies kunnen later toegevoegd worden.
 
 ## Later aanpassen
 
-Begin met de naam in `includes/header.php` en `includes/footer.php`, de introductie
-in `index.php` en de projectgegevens in `data/projects.php`.
-De algemene kleuren staan bovenaan `assets/css/style.css`.
-
-De projectlijst bevat nu uitsluitend vaste, eigen voorbeeldinhoud. Wil je later
-gebruikersinvoer of gegevens uit een database tonen, escape die tekst dan met
-`htmlspecialchars()` voordat je ze in HTML uitvoert.
+Begin met de introductie, projectkaarten en over-mijtekst in `index.html`.
+De projectpagina staat in `project.html`. De algemene kleuren staan bovenaan
+`assets/css/style.css`.
