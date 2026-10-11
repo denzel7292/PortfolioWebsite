@@ -1,9 +1,10 @@
 # Portfolio — eerste basis
 
 Een basisportfolio in HTML, CSS en een klein beetje JavaScript als start.
-Drie projectkaarten bevatten nog voorbeelden; Dokter Bibber VR is de eerste uitgewerkte case.
+Twee projectkaarten bevatten nog voorbeelden. Dokter Bibber VR en Sushi Sakai zijn uitgewerkte cases.
 Er is geen database, contactformulier of externe bibliotheek. De Dokter Bibber-case bevat
 een Figma-presentatie die online beschikbaar moet blijven om op de pagina te verschijnen.
+De Sushi Sakai-case bevat lokale afbeeldingen uit de projectpresentatie en links naar het Figma-bestand.
 
 ## Lokaal bekijken
 
@@ -27,17 +28,19 @@ Er is geen database of aparte applicatieserver nodig.
 index.html                    Homepage
 project.html                  Projectdetailpagina
 dokter-bibber.html            Case over de VR-simulatie
+sushi-sakai.html              Case over een toegankelijk mobiel ontwerp
 404.html                      Pagina voor een onbekend adres
 assets/
   css/style.css               Dummy stijl en mobiele weergave
   js/main.js                  Openen en sluiten van het mobiele menu
   favicon.svg                 Klein pictogram voor het browsertabblad
+  images/sushi-sakai/         Beelden uit de Sushi Sakai-projectpresentatie
 ```
 
 ## Wat werkt al?
 
 - Navigatie naar werk, over mij en contact.
-- Een uitgewerkte VR-case en drie aanklikbare voorbeeldprojecten.
+- Twee uitgewerkte cases en twee aanklikbare voorbeeldprojecten.
 - Eén gedeelde opbouw voor de case studies: uitdaging, proces en resultaat.
 - Mobiel menu, ook te sluiten met Escape. Zonder JavaScript blijven de links zichtbaar.
 - Weergave voor desktop, tablet en mobiel, zichtbare toetsenbordfocus en minder beweging
@@ -52,7 +55,7 @@ Een playground en uitgebreidere functies kunnen later toegevoegd worden.
 ## Later aanpassen
 
 Begin met de introductie, projectkaarten en over-mijtekst in `index.html`.
-De VR-case staat in `dokter-bibber.html`; de andere projectpagina's gebruiken
+De cases staan in `dokter-bibber.html` en `sushi-sakai.html`; de voorbeeldprojecten gebruiken
 `project.html`. De algemene kleuren staan bovenaan
 `assets/css/style.css`.
 
