@@ -22,22 +22,6 @@ Deze versie is statisch en daardoor meteen geschikt voor Vercel.
 
 Er is geen database of aparte applicatieserver nodig.
 
-## Bestanden
-
-```text
-index.html                    Homepage
-project.html                  Projectdetailpagina
-dokter-bibber.html            Case over de VR-simulatie
-sushi-sakai.html              Case over een toegankelijk mobiel ontwerp
-404.html                      Pagina voor een onbekend adres
-assets/
-  css/style.css               Dummy stijl en mobiele weergave
-  js/main.js                  Openen en sluiten van het mobiele menu
-  js/lightbox.js              Vergroten van Sushi Sakai-beelden
-  favicon.svg                 Klein pictogram voor het browsertabblad
-  images/sushi-sakai/         Beelden uit de Sushi Sakai-projectpresentatie
-```
-
 ## Wat werkt al?
 
 - Navigatie naar werk, over mij en contact.
@@ -47,21 +31,3 @@ assets/
 - Weergave voor desktop, tablet en mobiel, zichtbare toetsenbordfocus en minder beweging
   wanneer de bezoeker dat heeft ingesteld.
 - Een 404-melding bij een onbekend project.
-
-Contact is voorlopig alleen een zichtbare placeholder. Er worden geen berichten verstuurd.
-De grafische kaarten zijn met CSS opgebouwd. De Dokter Bibber-case toont de Figma-presentatie
-via een insluiting; bezoekers kunnen deze ook rechtstreeks in Figma openen.
-De beelden op de Sushi Sakai-case openen vergroot op dezelfde pagina. Ze sluiten met de knop,
-Escape of een klik naast het beeld. Bij het openen stuurt de pagina een benoemd
-`SushiSakai_ImageOpen_*`-event naar de bestaande Contentsquare-tag, als die voor de bezoeker actief is.
-Een playground en uitgebreidere functies kunnen later toegevoegd worden.
-
-## Later aanpassen
-
-Begin met de introductie, projectkaarten en over-mijtekst in `index.html`.
-De cases staan in `dokter-bibber.html` en `sushi-sakai.html`; de voorbeeldprojecten gebruiken
-`project.html`. De algemene kleuren staan bovenaan
-`assets/css/style.css`.
-
-De case is gebaseerd op de presentatie van Denzel Coppens en Jesse Vangindertael:
-<https://www.figma.com/slides/uoXMW7tw2DM1crfsMlDPzA>.
