@@ -7,7 +7,14 @@ if (lightbox && typeof lightbox.showModal === 'function') {
     const figure = lightbox.querySelector('.lightbox-figure');
     const closeButton = lightbox.querySelector('.lightbox-close');
     const zoomButton = lightbox.querySelector('.lightbox-zoom');
+    const lightboxMobileScreen = window.matchMedia('(max-width: 640px)');
     let lastTrigger = null;
+
+    function resetZoom() {
+        lightbox.classList.remove('is-zoomed');
+        zoomButton.textContent = 'Vergroot verder';
+        zoomButton.setAttribute('aria-pressed', 'false');
+    }
 
     document.querySelectorAll('[data-lightbox]').forEach((link) => {
         link.addEventListener('click', (event) => {
@@ -20,9 +27,7 @@ if (lightbox && typeof lightbox.showModal === 'function') {
             image.src = link.href;
             image.alt = thumbnail?.alt || '';
             caption.textContent = figureCaption?.textContent.trim() || 'Projectbeeld';
-            lightbox.classList.remove('is-zoomed');
-            zoomButton.textContent = 'Vergroot verder';
-            zoomButton.setAttribute('aria-pressed', 'false');
+            resetZoom();
 
             lightbox.showModal();
             document.documentElement.classList.add('lightbox-open');
@@ -42,6 +47,10 @@ if (lightbox && typeof lightbox.showModal === 'function') {
         const isZoomed = lightbox.classList.toggle('is-zoomed');
         zoomButton.textContent = isZoomed ? 'Passend maken' : 'Vergroot verder';
         zoomButton.setAttribute('aria-pressed', String(isZoomed));
+    });
+
+    lightboxMobileScreen.addEventListener('change', (event) => {
+        if (!event.matches) resetZoom();
     });
 
     lightbox.addEventListener('click', (event) => {
