@@ -83,6 +83,14 @@ a:focus-visible, button:focus-visible { outline: 3px solid #527622; outline-offs
 
 /* Tijdelijke projectbeelden. Later vervangbaar door echte foto's of screenshots. */
 .visual-interface { background: #dce9cb; }
+.visual-bibber { background: linear-gradient(132deg, #122333 0%, #254665 49%, #946b92 100%); color: #fff; }
+.visual-bibber .visual-number, .visual-bibber .visual-label { color: #fff; }
+.bibber-pulse { position: absolute; width: 62%; aspect-ratio: 1; border: 1px solid #ffffff73; border-radius: 50%; transform: rotate(-24deg) scaleY(.52); }
+.bibber-pulse-one { top: -1%; right: -10%; }
+.bibber-pulse-two { bottom: -24%; left: -22%; border-color: #d5f47880; }
+.bibber-cross { position: absolute; right: 12%; top: 20%; display: grid; place-items: center; width: 24%; aspect-ratio: 1; border-radius: 50%; background: #d5f478; color: #1b3948; font-size: clamp(4rem, 10vw, 8rem); line-height: 1; transform: rotate(-13deg); box-shadow: 14px 15px 0 #d5f47833; }
+.bibber-title { position: absolute; left: 10%; top: 25%; font-size: clamp(2.4rem, 5.3vw, 5.4rem); line-height: .88; letter-spacing: -.075em; font-weight: 900; text-shadow: 0 10px 25px #13233466; }
+.bibber-title small { display: inline-block; margin-left: .3em; color: #d5f478; font-size: .28em; letter-spacing: .03em; vertical-align: top; }
 .mock-browser { position: absolute; width: 66%; height: 70%; top: 16%; left: 17%; border-radius: 8px; background: #f9faf3; box-shadow: 9px 15px 0 #b3c29f; transform: rotate(-6deg); }
 .browser-bar { border-bottom: 1px solid #dfe3d6; padding: 3% 6%; display: flex; gap: 4px; }
 .browser-bar i { width: 4px; height: 4px; border-radius: 50%; background: #b8bfab; }
@@ -143,6 +151,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid #527622; outline-offs
 .case-page .type-poster { width: 35%; left: 32.5%; padding: 3%; }
 .case-page .note { width: 26%; padding: 3%; }
 .case-page .note-two { left: 37%; }
+.case-bibber-visual .bibber-title { top: 26%; left: 11%; font-size: clamp(4rem, 10vw, 9rem); }
+.case-bibber-visual .bibber-cross { width: 17%; right: 18%; top: 15%; }
+.presentation-frame { aspect-ratio: 16 / 9; margin-top: 28px; overflow: hidden; border-radius: var(--radius); background: #e7e9e2; }
+.presentation-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.presentation-link { margin-top: 12px; font-size: .82rem; color: var(--muted); }
+.presentation-link a { text-decoration: underline; text-underline-offset: 3px; }
 .project-facts { display: grid; grid-template-columns: repeat(4, 1fr); padding-block: 28px; border-bottom: 1px solid var(--line); gap: 24px; }
 .project-facts dt { font-size: .7rem; color: var(--muted); margin-bottom: 6px; }
 .project-facts dd { margin: 0; font-size: .9rem; }
@@ -205,6 +219,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid #527622; outline-offs
     .case-page .dimension-sphere { width: 21%; left: 39%; }
     .case-page .type-poster { width: 54%; left: 23%; padding: 6%; }
     .case-page .note { width: 35%; padding: 5%; }
+    .bibber-title { font-size: clamp(2.5rem, 10vw, 4.4rem); }
+    .bibber-cross { font-size: 4rem; }
+    .case-bibber-visual .bibber-title { font-size: clamp(2.5rem, 11vw, 5rem); }
+    .case-bibber-visual .bibber-cross { width: 24%; right: 9%; }
     .project-facts { grid-template-columns: 1fr 1fr; }
     .case-end > span { font-size: .85rem; }
 }

@@ -1,8 +1,9 @@
 # Portfolio — eerste basis
 
 Een basisportfolio in HTML, CSS en een klein beetje JavaScript als start.
-Alle teksten, projectnamen en beelden zijn voorbeelden. Er is geen database,
-contactformulier, externe bibliotheek of koppeling met een andere dienst.
+Drie projectkaarten bevatten nog voorbeelden; Dokter Bibber VR is de eerste uitgewerkte case.
+Er is geen database, contactformulier of externe bibliotheek. De Dokter Bibber-case bevat
+een Figma-presentatie die online beschikbaar moet blijven om op de pagina te verschijnen.
 
 ## Lokaal bekijken
 
@@ -25,6 +26,7 @@ Er is geen database of aparte applicatieserver nodig.
 ```text
 index.html                    Homepage
 project.html                  Projectdetailpagina
+dokter-bibber.html            Case over de VR-simulatie
 404.html                      Pagina voor een onbekend adres
 assets/
   css/style.css               Dummy stijl en mobiele weergave
@@ -35,7 +37,7 @@ assets/
 ## Wat werkt al?
 
 - Navigatie naar werk, over mij en contact.
-- Vier aanklikbare projecten met een eigen adres, bijvoorbeeld `project.html?id=project-01`.
+- Een uitgewerkte VR-case en drie aanklikbare voorbeeldprojecten.
 - Eén gedeelde opbouw voor de case studies: uitdaging, proces en resultaat.
 - Mobiel menu, ook te sluiten met Escape. Zonder JavaScript blijven de links zichtbaar.
 - Weergave voor desktop, tablet en mobiel, zichtbare toetsenbordfocus en minder beweging
@@ -43,11 +45,16 @@ assets/
 - Een 404-melding bij een onbekend project.
 
 Contact is voorlopig alleen een zichtbare placeholder. Er worden geen berichten verstuurd.
-De grafische vlakken zijn met CSS opgebouwd, zodat er nog geen echte projectfoto's nodig zijn.
+De grafische kaarten zijn met CSS opgebouwd. De Dokter Bibber-case toont de Figma-presentatie
+via een insluiting; bezoekers kunnen deze ook rechtstreeks in Figma openen.
 Een playground en uitgebreidere functies kunnen later toegevoegd worden.
 
 ## Later aanpassen
 
 Begin met de introductie, projectkaarten en over-mijtekst in `index.html`.
-De projectpagina staat in `project.html`. De algemene kleuren staan bovenaan
+De VR-case staat in `dokter-bibber.html`; de andere projectpagina's gebruiken
+`project.html`. De algemene kleuren staan bovenaan
 `assets/css/style.css`.
+
+De case is gebaseerd op de presentatie van Denzel Coppens en Jesse Vangindertael:
+<https://www.figma.com/slides/uoXMW7tw2DM1crfsMlDPzA>.
