@@ -33,6 +33,7 @@ sushi-sakai.html              Case over een toegankelijk mobiel ontwerp
 assets/
   css/style.css               Dummy stijl en mobiele weergave
   js/main.js                  Openen en sluiten van het mobiele menu
+  js/lightbox.js              Vergroten van Sushi Sakai-beelden
   favicon.svg                 Klein pictogram voor het browsertabblad
   images/sushi-sakai/         Beelden uit de Sushi Sakai-projectpresentatie
 ```
@@ -50,6 +51,9 @@ assets/
 Contact is voorlopig alleen een zichtbare placeholder. Er worden geen berichten verstuurd.
 De grafische kaarten zijn met CSS opgebouwd. De Dokter Bibber-case toont de Figma-presentatie
 via een insluiting; bezoekers kunnen deze ook rechtstreeks in Figma openen.
+De beelden op de Sushi Sakai-case openen vergroot op dezelfde pagina. Ze sluiten met de knop,
+Escape of een klik naast het beeld. Bij het openen stuurt de pagina een benoemd
+`SushiSakai_ImageOpen_*`-event naar de bestaande Contentsquare-tag, als die voor de bezoeker actief is.
 Een playground en uitgebreidere functies kunnen later toegevoegd worden.
 
 ## Later aanpassen
